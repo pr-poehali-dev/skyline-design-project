@@ -3,40 +3,35 @@ export function Philosophy() {
     <section id="philosophy" className="py-32 px-6 bg-card">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          {/* Left: Image */}
           <div className="relative aspect-[4/5] bg-muted rounded-lg overflow-hidden">
             <img
-              src="/minimal-scandinavian-workspace-with-natural-light-.jpg"
-              alt="Спокойное рабочее пространство"
+              src="https://cdn.poehali.dev/projects/30cde391-2380-4cad-a79e-1e3388c8576d/files/c6cfbf5a-3929-4ee6-90d0-cededa8a99e5.jpg"
+              alt="Панель управления логистикой"
               className="w-full h-full object-cover"
             />
-            {/* Decorative accent */}
             <div className="absolute bottom-6 left-6 right-6 p-6 bg-background/90 backdrop-blur-sm rounded-lg">
               <p className="text-sm text-muted-foreground italic">
-                «Когда жизнь и работа движутся в гармонии, лучшие идеи не просто появляются — они текут сами собой.»
+                «Когда каждый маршрут оптимален, а каждый груз под контролем — бизнес растёт сам собой.»
               </p>
             </div>
           </div>
 
-          {/* Right: Text content */}
           <div className="flex flex-col gap-8">
-            <span className="text-sm uppercase tracking-widest text-sage">Наша философия</span>
+            <span className="text-sm uppercase tracking-widest text-sage">Наш подход</span>
             <h2 className="font-serif text-4xl md:text-5xl tracking-tight text-foreground leading-tight text-balance">
-              Осознанная работа и тихий фокус
+              Точные маршруты. Полный контроль.
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Hvile родился из простого наблюдения: самая значимая работа редко происходит среди постоянных
-                уведомлений и бесконечных списков задач. Она рождается в моменты тишины.
+                LogiFlow создан из понимания: в логистике каждый лишний километр — это потерянные деньги и время. Мы анализируем пробки, погоду, ограничения по весу и таможенные нюансы, чтобы каждая доставка шла по лучшему пути.
               </p>
               <p>
-                Мы создали инструмент, который уважает ритм глубокой работы — создаёт пространство для концентрации,
-                рефлексии и того сосредоточенного внимания, которое превращает обычные задачи в мастерство.
+                Платформа объединяет управление заказами, GPS-трекинг и умную маршрутизацию в одном окне — чтобы вы фокусировались на росте бизнеса, а не на ручном планировании.
               </p>
             </div>
             <div className="pt-4">
               <a href="#features" className="inline-flex items-center gap-2 text-foreground group">
-                <span className="border-b border-foreground pb-0.5">Наш подход</span>
+                <span className="border-b border-foreground pb-0.5">Возможности платформы</span>
                 <span className="text-terracotta group-hover:translate-x-1 transition-transform duration-300">→</span>
               </a>
             </div>

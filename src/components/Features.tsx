@@ -1,25 +1,25 @@
-import { Clock, Layers, Moon, Sparkles } from "lucide-react";
+import Icon from "@/components/ui/icon";
 
 const features = [
   {
-    icon: Clock,
-    title: "Неспешное планирование",
-    description: "Тайм-блоки, которые уважают ваши естественные ритмы. Между задачами всегда есть время на паузу.",
+    icon: "Route",
+    title: "Оптимизация маршрутов",
+    description: "Расчёт лучших маршрутов с учётом пробок, платных дорог, ограничений по весу и габаритам. Интеграция с картами.",
   },
   {
-    icon: Layers,
-    title: "Фокус на текущем",
-    description: "Видите только то, что важно сейчас. Остальное терпеливо ждёт, пока вы будете готовы.",
+    icon: "MapPin",
+    title: "GPS-трекинг в реальном времени",
+    description: "Отслеживайте каждый груз на карте через GPS и IoT-датчики. Мгновенные уведомления о статусе доставки.",
   },
   {
-    icon: Moon,
-    title: "Часы тишины",
-    description: "Автоматические периоды покоя, которые защищают ваше время глубокой работы от отвлечений.",
+    icon: "ClipboardList",
+    title: "Управление заказами",
+    description: "Карточки заказов с полной информацией: маршрут, тип груза, стоимость. Статусы от создания до доставки.",
   },
   {
-    icon: Sparkles,
-    title: "Мягкая аналитика",
-    description: "Вдумчивые наблюдения за вашими паттернами — без осуждения, с поддержкой.",
+    icon: "BarChart3",
+    title: "Аналитика и отчёты",
+    description: "Детальная статистика по маршрутам, срокам доставки и расходам. Находите узкие места и оптимизируйте процессы.",
   },
 ];
 
@@ -30,7 +30,7 @@ export function Features() {
         <div className="text-center mb-20">
           <span className="text-sm uppercase tracking-widest text-terracotta mb-4 block">Возможности</span>
           <h2 className="font-serif text-4xl md:text-5xl tracking-tight text-foreground text-balance">
-            Инструменты, дарящие покой
+            Всё для эффективной логистики
           </h2>
         </div>
 
@@ -41,7 +41,7 @@ export function Features() {
               className="group p-8 md:p-10 rounded-2xl bg-card border border-border hover:border-sage/30 transition-colors duration-500"
             >
               <div className="w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center mb-6 group-hover:bg-sage/20 transition-colors duration-500">
-                <feature.icon size={24} className="text-sage" />
+                <Icon name={feature.icon} size={24} className="text-sage" />
               </div>
               <h3 className="font-serif text-2xl text-foreground mb-3">{feature.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
